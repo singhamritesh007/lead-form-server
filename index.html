@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Form</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <p>GET IN TOUCH</p>
+        <form id="leadForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="whatDescribesYou">What Describes You?</label>
+            <select id="whatDescribesYou" name="whatDescribesYou" required>
+                <option value="">Select One</option>
+                <option value="Architect / Designer">Architect / Designer</option>
+                <option value="Builder / Contractor">Builder / Contractor</option>
+                <option value="Dealer">Dealer</option>
+            </select>
+
+            <label for="howCanWeHelp">How Can We Help You?</label>
+            <select id="howCanWeHelp" name="howCanWeHelp" required>
+                <option value="">Select One</option>
+                <option value="Media Relations">Media Relations</option>
+                <option value="Investor Relations">Investor Relations</option>
+                <option value="International Sales">International Sales</option>
+                <option value="Production Information / Questions">Production Information / Questions</option>
+            </select>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select One</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+            </select>
+
+            <label for="stateProvince">State/Province:</label>
+            <select id="stateProvince" name="stateProvince" required>
+                <option value="">Select One</option>
+                <!-- United States options -->
+                <optgroup label="--UNITED STATES--">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <!-- Add more states here -->
+                </optgroup>
+                <!-- Canada options -->
+                <optgroup label="--CANADA--">
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <!-- Add more provinces here -->
+                </optgroup>
+            </select>
+            <label for="postalCode">PostalCode:</label>
+            <input type="text" id="postalCode" name="postalCode" required>
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+     <!-- Include Axios from CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
