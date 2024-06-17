@@ -27,7 +27,7 @@ document.getElementById('leadForm').addEventListener('submit', function(event) {
         Notes__c: notes,
     });
 
-    fetch('http://localhost:3000/create-lead', {
+    fetch('https://singhamritesh007.github.io/lead-form-server/create-lead', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
